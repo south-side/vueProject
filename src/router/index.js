@@ -15,11 +15,7 @@ const routes = [
     name: 'Job',
     component: Job,
   },
-  {
-    path: '/a',
-    name: 'a',
-    component: a,
-  },
+
 
 ]
 
