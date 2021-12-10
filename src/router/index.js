@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home/Home.vue'
 import Job from '../views/Job/Job.vue'
+import New from '../views/News/New.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -15,8 +16,11 @@ const routes = [
     name: 'Job',
     component: Job,
   },
-
-
+  {
+    path: '/New',
+    name: 'New',
+    component: New,
+  },
 ]
 
 const router = new VueRouter({

@@ -24,7 +24,11 @@
                     </el-submenu>
                     <el-submenu index="4" style="height: 90px;line-height: 90px">
                         <template slot="title" style="height: 90px;line-height: 90px">
-                            <span slot="title" style="height: 90px;line-height: 90px"><a>新闻动态</a></span>
+                            <span slot="title" style="height: 90px;line-height: 90px">
+                                <router-link to="/New">
+                                    新闻动态
+                                </router-link>
+                            </span>
                         </template>
                         <el-menu-item index="4-1">企业动态</el-menu-item>
                         <el-menu-item index="4-2">公告信息</el-menu-item>
