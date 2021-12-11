@@ -1,15 +1,15 @@
 <template>
-     <div class="Introduces">
+     <div class="abIntroduces">
         <!-- <h1 class="Introduces-title wow fadeInUp " data-wow-duration="1s" data-wow-delay="0.4s">
             <a href="/">公司简介</a>
         </h1> -->
-        <div class="Introduce">
-            <div class="Introduce-bg">
+        <div class="abIntroduce">
+            <div class="abIntroduce-bg">
                 <img src="../../image/bizhi.jpg">
             </div>
-            <div class="Introduce-p wow rollIn" data-wow-duration="1s" data-wow-delay="1s">
+            <div class="abIntroduce-p wow rollIn" data-wow-duration="1s" data-wow-delay="1s">
                 <h1 class="wow bounceInDown" data-wow-duration="2s" data-wow-delay="2s">关于我们</h1>
-                <div class="Introduce-p01 wow bounceInDown " data-wow-duration="3s" data-wow-delay="3s">
+                <div class="abIntroduce-p01 wow bounceInDown " data-wow-duration="3s" data-wow-delay="3s">
                     <p>
                         目前公司下辖东方美谷核心区——生物科技园区，园区地处奉贤区中部，
                         北起大叶公路、南至浦南运河、西起S4高速公路，东至金汇港，占地面积18.49平方公里。
@@ -24,7 +24,7 @@
                         “上海市知名品牌创建示范区”等品牌荣誉。
                     </p>
                 </div>
-                <div class="Introduce-p02 wow bounceInDown" data-wow-duration="3s" data-wow-delay="3s">
+                <div class="abIntroduce-p02 wow bounceInDown" data-wow-duration="3s" data-wow-delay="3s">
                     <img src="../../image/img_5.png" >
                 </div>
             </div>
@@ -38,25 +38,25 @@
     }
 </script>
 <style>
-    .Introduces{
+    .abIntroduces{
         width:100%;
         height:590px;
         float: left;
         position: relative;
         overflow:hidden;
     }
-    .Introduces-title{
+    .abIntroduces-title{
         width: 100%;
         height:100px;
         text-align: center;
     }
-    .Introduces-title a{
+    .abIntroduces-title a{
         color:#568ae1;
         text-decoration: none;
         border-bottom: 1px solid #568ae1;
         padding-bottom: 20px;
     }
-    .Introduce{
+    .abIntroduce{
         width:100%;
         height:550px;
         float: left;
@@ -68,7 +68,7 @@
         overflow:hidden;
         background-color: rgb(66, 110, 185,0.7);
     }
-    .Introduce-bg{
+    .abIntroduce-bg{
         width:100%;
         height:100%;
         position: absolute;
@@ -81,7 +81,7 @@
         overflow:hidden;
 
     }
-    .Introduce-bg img{
+    .abIntroduce-bg img{
         width:100%;
         height:550px;
         margin-left:-31%;
@@ -91,7 +91,7 @@
         -webkit-transform:skew(50deg,0deg); /* Safari and Chrome */
         -o-transform:skew(50deg,0deg); /* Opera */
     }
-    .Introduce-p{
+    .abIntroduce-p{
         width:75%;
         height:500px;
         float: left;
@@ -101,27 +101,27 @@
         margin-top: 30px;
     }
 
-    .Introduce-p h1{
+    .abIntroduce-p h1{
         text-align: center;
         padding-top: 25px;
         color: black;
         border-bottom: 1px solid black;
     }
-    .Introduce-p01{
+    .abIntroduce-p01{
         width:60%;
         height:380px;
         float: left;
         margin: 0 25px;
     }
-    .Introduce-p01 p{
+    .abIntroduce-p01 p{
         text-indent: 2em;
     }
-    .Introduce-p02{
+    .abIntroduce-p02{
         width:30%;
         height:380px;
         float: left;
     }
-    .Introduce-p02 img{
+    .abIntroduce-p02 img{
         width: 300px;
         height: 200px;
     }
