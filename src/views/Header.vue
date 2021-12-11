@@ -27,7 +27,7 @@
                     <el-submenu index="4" style="height: 90px;line-height: 90px">
                         <template slot="title" style="height: 90px;line-height: 90px">
                             <span slot="title" style="height: 90px;line-height: 90px">
-                                <router-link to="/New">
+                                <router-link to="/NewResearch">
                                     新闻动态
                                 </router-link>
                             </span>

@@ -7,6 +7,7 @@ import AboutUs from '../views/AboutUs/AboutUs.vue'
 import NewResearch from '../views/News/Newscomponents/NewResearch'
 import NewCooperation from '../views/News/Newscomponents/NewCooperation'
 import NewFinance from '../views/News/Newscomponents/NewFinance'
+import Researches from '../views/News/Researches'
 Vue.use(VueRouter)
 
 const routes = [
@@ -42,12 +43,16 @@ const routes = [
       }
     ]
   },
+  {
+    path: '/Researches/:id',
+    name: 'Researches',
+    component: Researches,
+  },
     {
     path:'/AboutUs',
     name:'AboutUs',
     component: AboutUs
   }
-
 
 ]
 

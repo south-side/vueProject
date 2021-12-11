@@ -7,27 +7,32 @@
                 <div class="NewsArray">
                     <table style="margin: 0 auto;">
                         <tr>
-                            <td @click = "tab=0" :class="{tab_active:tab==0}">
+                            <td @click = "tab=0" :class="{tab_active:tab==0}" active-class="active"
+                                class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s" v-on:click="true">
                                 <router-link to="/NewResearch">
                                     技术研究
                                 </router-link>
                             </td>
-                            <td @click = "tab=1" :class="{tab_active:tab==1}">
+                            <td @click = "tab=1" :class="{tab_active:tab==1}" class="wow fadeInDown" data-wow-duration="2s" data-wow-delay="2s">
                                 <router-link to="/NewCooperation">
                                     合作开发
                                 </router-link>
                             </td>
-                            <td  @click = "tab=2" :class="{tab_active:tab==2}">
+                            <td  @click = "tab=2" :class="{tab_active:tab==2}" class="wow fadeInDown" data-wow-duration="3s" data-wow-delay="3s">
                                 <router-link to="/NewFinance">
                                     融资
                                 </router-link>
                             </td>
+
                         </tr>
                     </table>
                 </div>
                 <div class="NewsDown">
-                    <router-view></router-view>
+                    <transition name="fade">
+                        <router-view></router-view>
+                    </transition>
                 </div>
+
             </div>
         </div>
         <HomeFooter></HomeFooter>
@@ -45,8 +50,8 @@
         },
         data(){
             return{
-                tab:0,
-
+                tab:'0',
+                isActive:true,
             }
         },
 
@@ -64,7 +69,7 @@
     }
     .NewsContent{
         width:100%;
-        height: 2400px;
+        height: 2600px;
         position: relative;
         overflow: hidden;
     }
@@ -74,7 +79,7 @@
     }
     .New-Up{
         width: 100%;
-        height: 400px;
+        height: 2600px;
         margin: 0 auto;
     }
     .NewsArray{
@@ -100,8 +105,17 @@
     }
     .NewsDown{
         width: 100%;
-        height: 2000px;
+        height: 2200px;
         margin: 0 auto;
+    }
+    .fade-enter-active {
+        transition: all 2s ease;
+    }
+
+    .fade-enter
+        /* .slide-fade-leave-active 用于 2.1.8 以下版本 */ {
+        transform: translateY(300px);
+        opacity: 0;
     }
 
 
