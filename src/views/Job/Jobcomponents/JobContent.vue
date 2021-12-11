@@ -314,7 +314,6 @@
         color: white;
 
     }
-
     .areaList .tab_active{
         color: black;
         background-color: rgb(43,91,195,0.7);

@@ -13,7 +13,9 @@
                         text-color="#fff"
                         background-color="rgb(96, 141, 217,0.8)"
                 >
-                    <el-menu-item index="2" style="height: 90px;line-height: 90px"><a>首页</a></el-menu-item>
+                    <el-menu-item index="2" style="height: 90px;line-height: 90px">
+                        <router-link to="/Home">首页</router-link>
+                        </el-menu-item>
                     <el-submenu index="3" style="height: 90px;line-height: 90px">
                         <template slot="title" style="height: 90px;line-height: 90px">
                             <span slot="title" style="height: 90px;line-height: 90px"><a>产品中心</a></span>
@@ -38,8 +40,21 @@
                         <template slot="title" style="height: 90px;line-height: 90px">
                             <span slot="title" style="height: 90px;line-height: 90px"><a>关于公司</a></span>
                         </template>
-                        <el-menu-item index="6-1">公司简介</el-menu-item>
-                        <el-menu-item index="6-2">荣誉资质</el-menu-item>
+                        <el-menu-item index="6-1">
+                            <router-link to="/AboutUs">
+                                公司简介
+                            </router-link>
+                        </el-menu-item>
+                        <el-menu-item index="6-2">
+                            <router-link to="/AboutUs">
+                                荣誉资质
+                            </router-link>
+                        </el-menu-item>
+                        <el-menu-item index="6-3">
+                            <router-link to="/AboutUs">
+                                研发平台
+                            </router-link>
+                        </el-menu-item>
                     </el-submenu>
                     <el-menu-item index="7" style="height: 90px;line-height: 90px"><a>联系我们</a></el-menu-item>
                     <el-menu-item index="8" style="height: 90px;line-height: 90px">
@@ -149,6 +164,15 @@
     }
     .header .el-menu--horizontal>.el-submenu.is-active .el-submenu__title{
         border-bottom: 4px solid rgba(86, 225, 98, 0.37) !important;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .router-link-active{
+        text-decoration: none;
+        color: white;
     }
 
 </style>

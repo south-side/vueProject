@@ -9,7 +9,6 @@
 
     </div>
 </template>
-
 <script>
     import HomeHeader from './Header'
     import HomeBanner from './Homecomponents/Banner'
