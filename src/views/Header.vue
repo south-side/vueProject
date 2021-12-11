@@ -2,7 +2,7 @@
     <div class="header">
         <div class="U-head">
             <div class="header-logo">
-                <p style="padding-top:20px ;"><img src="../../image/img.png"></p>
+                <p style="padding-top:20px ;"><img src="../image/img.png"></p>
             </div>
             <div class="header-content">
                 <el-menu

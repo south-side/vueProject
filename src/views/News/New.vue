@@ -35,8 +35,8 @@
 </template>
 
 <script>
-    import HomeHeader from '../Home/Header'
-    import HomeFooter from '../Home/Footer'
+    import HomeHeader from '../Header'
+    import HomeFooter from '../Footer'
     export default {
         name: "News",
         components:{

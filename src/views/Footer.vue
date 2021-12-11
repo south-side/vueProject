@@ -17,13 +17,13 @@
             <table>
                 <tr>
                     <th>
-                        <img src="../../image/img_6.png">
+                        <img src="../image/img_6.png">
                     </th>
                     <th>
-                        <img src="../../image/img_6.png">
+                        <img src="../image/img_6.png">
                     </th>
                     <th>
-                        <img src="../../image/img_6.png">
+                        <img src="../image/img_6.png">
                     </th>
                 </tr>
                 <tr>

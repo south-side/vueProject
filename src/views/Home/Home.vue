@@ -10,12 +10,12 @@
     </div>
 </template>
 <script>
-    import HomeHeader from './Header'
+    import HomeHeader from '../Header'
     import HomeBanner from './Homecomponents/Banner'
     import HomeNews from './Homecomponents/News'
     import HomeProduct from './Homecomponents/Product'
     import HomeIntroduce from './Homecomponents/Introduce'
-    import HomeFooter from './Footer'
+    import HomeFooter from '../Footer'
     export default {
         name: "Home",
         components:{

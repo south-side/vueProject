@@ -8,8 +8,8 @@
 </template>
 
 <script>
-    import JobHeader from '../Home/Header'
-    import JobFooter from '../Home/Footer'
+    import JobHeader from '../Header'
+    import JobFooter from '../Footer'
     import JobContent from "./Jobcomponents/JobContent";
     export default {
         name: "Job",

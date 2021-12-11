@@ -7,8 +7,8 @@
     </div>
 </template>
 <script lang="ts">
-import abHeader from '../Home/Header.vue'
-import abfooter from "../Home/Footer.vue"
+import abHeader from '../Header.vue'
+import abfooter from "../Footer.vue"
 import abBanner from "../Home/Homecomponents/Banner.vue"
 import abody from "./AboutUsBody.vue"
 export default ({
