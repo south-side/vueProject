@@ -14,7 +14,7 @@
                         background-color="rgb(96, 141, 217,0.8)"
                 >
                     <el-menu-item index="2" style="height: 90px;line-height: 90px">
-                        <router-link to="/Home">首页</router-link>
+                        <router-link to="/">首页</router-link>
                         </el-menu-item>
                     <el-submenu index="3" style="height: 90px;line-height: 90px">
                         <template slot="title" style="height: 90px;line-height: 90px">
