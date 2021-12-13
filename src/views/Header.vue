@@ -11,7 +11,7 @@
                         mode="horizontal"
                         @select="handleSelect"
                         text-color="#fff"
-                        background-color="rgb(96, 141, 217,0.8)"
+                        background-color="rgb(57, 118, 223)"
                 >
                     <el-menu-item index="2" style="height: 90px;line-height: 90px">
                         <router-link to="/">首页</router-link>
@@ -96,7 +96,7 @@
     .header{
         width:100%;
         height:90px;
-        background-color: rgb(96, 141, 217);
+        background-color: rgb(57, 118, 223);
         position: relative;
         z-index: 1000;
         left: 0;
