@@ -2,14 +2,14 @@
     <div class="Footer">
         <div class="Footer-left">
             <div class="Footer-left01 wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
-                <p >中国生物技术股份有限公司</p>
+                <p >XXXXXXXX有限公司</p>
                 <p>
-                    京公网安备 11010502041575号
-                    地址：北京市朝阳区双桥路乙2号院
+                    京公网安备 **************号
+                    地址：XXXXXXXXXXXXXXXXXXXXXXXX
                 </p>
-                <p>电话：010-84663377 传真：010-84663322</p>
+                <p>电话：*********** 传真：***********</p>
                 <p>
-                    互联网药品信息服务资格证书编号：（京）-非经营性-2018-0278
+                    XXXXXXXXXXXXXXXXXXXXXXXX编号：XXXXXXXXXXXXXXXXXXXXXX
                 </p>
             </div>
         </div>

@@ -34,7 +34,6 @@
                     },
                     {id: '2',url:require('../../../image/img-2.jpg'),name:'新闻标题2',news:'新闻内容2'},
                     {id: '3',url:require('../../../image/img-3.jpg'),name:'新闻标题3',news:'新闻内容3'},
-
                 ],
             };
         },

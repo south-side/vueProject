@@ -6,7 +6,11 @@
 
         </div>
         <div class="Researches02">
-
+            <div class="Re wow fadeInDown" >
+                <div>
+                    3333
+                </div>
+            </div>
         </div>
         <HomeFooter></HomeFooter>
     </div>
@@ -45,11 +49,33 @@
         position: relative;
         float: left;
         background-color: #42b983;
+        height: 1000px;
     }
     .Researches02{
         width: 100%;
         position: relative;
         float: left;
+        height: 300px;
     }
+    .Re{
+        width: 10%;
+        border-left: 4px solid #9dc4ff;
+        height: 200px;
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+        padding-right: 10px;
+
+    }
+    .Re:before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 4px solid #9dc4ff;
+        left: -14px;
+        top: -22px; }
 
 </style>

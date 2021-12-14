@@ -3,9 +3,10 @@
         <div class="btn">
             <el-button type="primary" round @click='checkVideoFun()' >点此观看</el-button> <div class='mask' v-if="videoState == true" @click='masksCloseFun' ></div>
             <div class="videomasks" v-if="videoState == true">
-                <video controls='controls' class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                <video controls='controls'>
                     <source src="../../../image/2.mp4" type="video/mp4" /> </video>
-            </div> </div>
+            </div>
+        </div>
         <el-carousel height="600px">
             <el-carousel-item v-for="item in imgList" :key="item.id" >
                 <img :src="item.url" class="image">
@@ -39,20 +40,20 @@
                 pList:[
                     {
                         id: '1',
-                        title:'智能化药物分子研发平台',
+                        title:'XXXXXXXXXXX研发平台',
                         msg:'333333333333333333333333333333333',
                         isActive: true,
                     },
                     {
                         id: '2',
-                        title:'hahahahaa智能化药物分子研发平台',
+                        title:'XXXXXXXXXXXX研发平台',
                         msg: '444433333333333333333333333333',
                         isActive: true,
                     },
                     {
                         id: '3',
-                        title:'智能化药物分子研发平台wuwuwuuwuwuwuwuwu',
-                        msg:'5555',
+                        title:'XXXXXXXXXXX研发平台',
+                        msg:'5555555555555555555555555555',
                         isActive: true,
                     },
                 ],
@@ -110,7 +111,7 @@
         list-style: none;
         float: left;
     }
-    .mask{
+    .block .btn .mask{
         position:fixed;
         top:0;
         left:0;
@@ -121,13 +122,13 @@
         opacity: .6;
     }
 
-    .videomasks{
+    .block .btn .videomasks{
         max-width: 1200px;
         position: fixed;
         left: 50%;
         top: 55%;
         z-index: 20;
-        transform: translate(-50%,-50%);
+        transform: translate(-40%,-40%);
         width: 700px;
         height: 550px;
        }

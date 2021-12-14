@@ -7,18 +7,18 @@
                 <div class="NewsArray">
                     <table style="margin: 0 auto;">
                         <tr>
-                            <td @click = "tab=0" :class="{tab_active:tab==0}" active-class="active"
+                            <td @click = "tab=0" :class="{'tab_active':tab==0}" active-class="active"
                                 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s" v-on:click="true">
                                 <router-link to="/NewResearch">
                                     技术研究
                                 </router-link>
                             </td>
-                            <td @click = "tab=1" :class="{tab_active:tab==1}" class="wow fadeInDown" data-wow-duration="2s" data-wow-delay="2s">
+                            <td @click = "tab=1" :class="{tab_active:tab==1}" class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s">
                                 <router-link to="/NewCooperation">
                                     合作开发
                                 </router-link>
                             </td>
-                            <td  @click = "tab=2" :class="{tab_active:tab==2}" class="wow fadeInDown" data-wow-duration="3s" data-wow-delay="3s">
+                            <td  @click = "tab=2" :class="{tab_active:tab==2}" class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s">
                                 <router-link to="/NewFinance">
                                     融资
                                 </router-link>

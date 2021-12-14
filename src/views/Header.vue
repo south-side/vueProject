@@ -2,7 +2,7 @@
     <div class="header">
         <div class="U-head">
             <div class="header-logo">
-                <p style="padding-top:20px ;"><img src="../image/img.png"></p>
+                <p style="padding-top:20px ; ">天鹜科技Logo</p>
             </div>
             <div class="header-content">
                 <el-menu
@@ -18,11 +18,10 @@
                         </el-menu-item>
                     <el-submenu index="3" style="height: 90px;line-height: 90px">
                         <template slot="title" style="height: 90px;line-height: 90px">
-                            <span slot="title" style="height: 90px;line-height: 90px"><a>产品中心</a></span>
+                            <span slot="title" style="height: 90px;line-height: 90px"><a>科学研究</a></span>
                         </template>
-                        <el-menu-item index="3-1" >产品分类1</el-menu-item>
-                        <el-menu-item index="3-2">产品分类2</el-menu-item>
-                        <el-menu-item index="3-3">产品分类3</el-menu-item>
+                        <el-menu-item index="3-1">研究方向</el-menu-item>
+                        <el-menu-item index="3-2">研发管线</el-menu-item>
                     </el-submenu>
                     <el-submenu index="4" style="height: 90px;line-height: 90px">
                         <template slot="title" style="height: 90px;line-height: 90px">
@@ -32,13 +31,13 @@
                                 </router-link>
                             </span>
                         </template>
-                        <el-menu-item index="4-1">企业动态</el-menu-item>
-                        <el-menu-item index="4-2">公告信息</el-menu-item>
-                        <el-menu-item index="4-3">专题专栏</el-menu-item>
+                        <el-menu-item index="4-1">技术研究</el-menu-item>
+                        <el-menu-item index="4-2">合作开发</el-menu-item>
+                        <el-menu-item index="4-3">融资</el-menu-item>
                     </el-submenu>
                     <el-submenu index="6" style="height: 90px;line-height: 90px">
                         <template slot="title" style="height: 90px;line-height: 90px">
-                            <span slot="title" style="height: 90px;line-height: 90px"><a>关于公司</a></span>
+                            <span slot="title" style="height: 90px;line-height: 90px"><a>关于我们</a></span>
                         </template>
                         <el-menu-item index="6-1">
                             <router-link to="/AboutUs">
@@ -47,7 +46,7 @@
                         </el-menu-item>
                         <el-menu-item index="6-2">
                             <router-link to="/AboutUs">
-                                荣誉资质
+                                团队介绍
                             </router-link>
                         </el-menu-item>
                         <el-menu-item index="6-3">
@@ -56,13 +55,23 @@
                             </router-link>
                         </el-menu-item>
                     </el-submenu>
-                    <el-menu-item index="7" style="height: 90px;line-height: 90px"><a>联系我们</a></el-menu-item>
+                    <el-menu-item index="7" style="height: 90px;line-height: 90px">
+                        <router-link to="/">
+                            价值
+                        </router-link>
+                    </el-menu-item>
                     <el-menu-item index="8" style="height: 90px;line-height: 90px">
+                        <router-link to="/Contact">
+                            联系我们
+                        </router-link>
+                    </el-menu-item>
+                    <el-menu-item index="9" style="height: 90px;line-height: 90px">
                         <router-link to="/Job">
                             招聘信息
                         </router-link>
                     </el-menu-item>
                 </el-menu>
+
             </div>
             <div class="header-right">
                 <a style="height: 90px;line-height: 90px">

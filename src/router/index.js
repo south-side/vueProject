@@ -8,6 +8,7 @@ import NewResearch from '../views/News/Newscomponents/NewResearch'
 import NewCooperation from '../views/News/Newscomponents/NewCooperation'
 import NewFinance from '../views/News/Newscomponents/NewFinance'
 import Researches from '../views/News/Researches'
+import Contact from '../views/Contact/contact'
 Vue.use(VueRouter)
 
 const routes = [
@@ -52,6 +53,11 @@ const routes = [
     path:'/AboutUs',
     name:'AboutUs',
     component: AboutUs
+  },
+  {
+    path:'/Contact',
+    name:'Contact',
+    component: Contact
   }
 
 ]
