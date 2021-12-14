@@ -61,7 +61,7 @@
         height:300px;
         position: relative;
         float: left;
-        background-color: rgb(96, 141, 217);
+        background-color: rgb(57, 118, 223);
     }
     .Footer-left{
         width: 50%;
