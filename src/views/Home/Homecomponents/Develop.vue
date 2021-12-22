@@ -10,8 +10,17 @@
             <div class="Develop_content_i">
                 <ul>
                     <li>
-                        <div class="DC_j">
-                            <img src="../../../image/bizhi.jpg">
+                        <div class="DC_i">
+                            <img src="../../../image/img-4.jpg">
+                            <div class="DC_j">
+                                <a href="/">
+                                    <h3>主营业务1</h3>
+                                    <p>
+                                        计算化学及人工智能驱动的创新药研发方案解决商计算化学及人工智能驱动的创新药研发方案解决商
+                                    </p>
+                                    <span>详情>></span>
+                                </a>
+                            </div>
                         </div>
                     </li>
                     <li style="margin-left: 5%;margin-right: 5%">
@@ -51,7 +60,7 @@
 <style>
     .Develop{
         width:100%;
-        height:560px;
+        height:460px;
         float: left;
         position: relative;
         overflow:hidden;
@@ -102,45 +111,20 @@
     .Develop .Develop_content_i li{
         float: left;
         width: 30%;
-        height: 385px;
+        height: 300px;
         border-radius: 8px;
         box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
     }
-    .Develop .Develop_content_i li .DC_i{
-        width:100%;
-        height:100%;
-        float: left;
-        margin:0;
-        padding:0;
-        overflow:hidden;
-        background-color: rgb(66, 110, 185,0.7);
+    .Develop .Develop_content_i li img{
+        width: 100%;
+        height: 100%;
     }
-    .DC_j{
-        width:385px;
-        height:300px;
+    .DC_j {
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 40px;
         position: absolute;
-        margin-left:10%;
-        -webkit-transform:skew(-45deg,0deg); /* Safari and Chrome */
-        transform:skew(-45deg,0deg);
-        -ms-transform:skew(-50deg,0deg); /* IE 9 */
-        -moz-transform:skew(-50deg,0deg); /* Firefox */
-
-        -o-transform:skew(-50deg,0deg); /* Opera */
-        overflow:hidden;
     }
-    .DC_j img{
-        width:384.75px;
-        height:300px;
-        margin-left:-31%;
-        -webkit-transform:skew(45deg,0deg); /* Safari and Chrome */
-        transform:skew(50deg,0deg);
-        -ms-transform:skew(50deg,0deg); /* IE 9 */
-        -moz-transform:skew(50deg,0deg); /* Firefox */
-
-        -o-transform:skew(50deg,0deg); /* Opera */
-    }
-
-
     .DC_j a{
         text-decoration: none;
     }
