@@ -26,6 +26,7 @@
     import HomeFooter from '../Footer'
     import HomeDevelop from './Homecomponents/Develop'
     import HomeResearch from './Homecomponents/Research'
+
     export default {
         name: "Home",
         components:{
@@ -36,7 +37,7 @@
             HomeIntroduce,
             HomeFooter,
             HomeDevelop,
-            HomeResearch
+            HomeResearch,
         },
         data(){
             return{
