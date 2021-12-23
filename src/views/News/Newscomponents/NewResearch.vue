@@ -24,9 +24,14 @@
                                     color: black;width: 90%;margin: 0 auto;">
                             {{item.des}}
                         </p>
-
                         <br/>
-                        <el-button style="margin-left: 30px;margin-top: 30px">了解更多>></el-button>
+                        <br/>
+                        <br/>
+                        <router-link style="margin-left: 30px;margin-top: 60px;
+                        text-decoration: none;
+                        color: black;
+                        font-size: 15px;
+" v-bind:to="'/Researches/'+item.id">了解更多>></router-link>
                     </div>
                 </el-carousel-item>
             </el-carousel>

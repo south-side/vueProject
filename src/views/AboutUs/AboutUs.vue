@@ -1,37 +1,37 @@
 <template>
     <div id="aboutUs">
-        <abHeader></abHeader>
-        <abody></abody>
-        <timeline></timeline>
-        <abfooter></abfooter>
-        
+        <AbHeader></AbHeader>
+        <AbBody></AbBody>
+        <AbFooter></AbFooter>
+
     </div>
 </template>
-<script lang="ts">
-import abHeader from '../Header.vue'
-import abfooter from "../Footer.vue"
-import abBanner from "../Home/Homecomponents/Banner.vue"
-import abody from "./AboutUsBody.vue"
-import abody2 from "./AboutUsBody2.vue"
-import timeline from "./timeline.vue"
-export default ({
-    name : "AboutUs",
-    components:{
-        abHeader,
-        abfooter,
-        abody,
-        abody2,
-        abBanner,
-        timeline,
-    },
-    data()
-    {
-        return 
-        {
+<script>
+    import AbHeader from '../Header'
+    import AbFooter from '../Footer'
+    import AbBody from './AboutUsBody'
+    export default {
+        name: "News",
+        components:{
+            AbHeader,
+            AbFooter,
+            AbBody
+        },
+        data(){
+            return{
 
-        }
+            }
+        },
+
     }
-
-    
-})
 </script>
+<style>
+    html,body,
+    #aboutUs{
+        width:100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+    }
+</style>

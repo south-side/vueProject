@@ -53,12 +53,12 @@
                                 </router-link>
                             </li>
                             <li>
-                                <router-link to="" class="ul-router">
+                                <router-link to="/NewCooperation" class="ul-router">
                                     合作团队
                                 </router-link>
                             </li>
                             <li>
-                                <router-link to="" class="ul-router">
+                                <router-link to="/NewFinance" class="ul-router">
                                     融资
                                 </router-link>
                             </li>

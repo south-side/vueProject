@@ -18,6 +18,19 @@
                  <img src="../../../src/image/img-1.jpg">
              </div>
          </div>
+         <div class="ab03">
+             <h1 class="About-title">
+                 <a href="/">关于我们</a>
+                 <span>
+                <i></i>
+            </span>
+             </h1>
+             <div class="videomasks" >
+                 <video controls='controls'>
+                     <source src="../../image/3.mp4" type="video/mp4" />
+                 </video>
+             </div>
+         </div>
     </div>
 </template>
 <script>
@@ -28,15 +41,18 @@
 <style>
     .abIntroduces{
         width:100%;
-        height:1000px;
+        height:1650px;
         float: left;
         position: relative;
         overflow:hidden;
         background-color: #f5f5f7;
+        top:110px
     }
     .ab01{
         width: 100%;
         height: 400px;
+        float: left;
+        position: relative;
     }
     .ab01 img{
         width: 100%;
@@ -45,6 +61,8 @@
     .ab02{
         width: 100%;
         height: 600px;
+        float: left;
+        position: relative;
     }
     .abIntro{
         width: 48%;
@@ -69,5 +87,39 @@
         height: 350px;
         margin-top: 135px;
         margin-left: 100px;
+    }
+    .ab03{
+        width: 100%;
+        height: 550px;
+        float: left;
+        position: relative;
+    }
+    .videomasks{
+        width: 80%;
+        height: 450px;
+        margin-left: 10%;
+    }
+    .About-title{
+        width: 100%;
+        height:100px;
+        text-align: center;
+        padding-top: 30px;
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+    .About-title a{
+        color: #333333;
+        text-decoration: none;
+    }
+
+    .About-title a:hover{
+        color: #568ae1;
+    }
+    .About-title span i{
+        width: 200px;
+        height: 10px;
+        background: rgba(0,102,255,0.3);
+        display: block;
+        margin:0 auto;
     }
 </style>

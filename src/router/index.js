@@ -9,6 +9,9 @@ import NewCooperation from '../views/News/Newscomponents/NewCooperation'
 import NewFinance from '../views/News/Newscomponents/NewFinance'
 import Researches from '../views/News/Researches'
 import Contact from '../views/Contact/contact'
+import YeWu from '../views/Home/YeWu'
+import YeWu1 from '../views/Home/Yewu1'
+import YeWu2 from '../views/Home/yewu02'
 Vue.use(VueRouter)
 
 const routes = [
@@ -58,7 +61,23 @@ const routes = [
     path:'/Contact',
     name:'Contact',
     component: Contact
-  }
+  },
+  {
+    path:'/YeWu',
+    name:'YeWu',
+    component: YeWu
+  },
+  {
+    path:'/YeWu1',
+    name:'YeWu1',
+    component: YeWu1
+  },
+
+  {
+    path:'/YeWu2',
+    name:'YeWu2',
+    component: YeWu2
+  },
 
 ]
 

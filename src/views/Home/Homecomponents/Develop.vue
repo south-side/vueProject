@@ -10,7 +10,7 @@
             <div class="Develop_content_i">
                 <ul>
                     <li>
-                        <div class="DC_i" onclick="location.href='/New'">
+                        <div class="DC_i" onclick="location.href='/YeWu'">
                             <img src="../../../image/img/img_1.png">
                             <div class="DC_j">
                                 <div class="DC_j01">
@@ -23,7 +23,7 @@
                         </div>
                     </li>
                     <li style="margin-left: 5%;margin-right: 5%">
-                        <div class="DC_i" onclick="location.href='/New'">
+                        <div class="DC_i" onclick="location.href='/YeWu'">
                             <img src="../../../image/img/img_6.png">
                             <div class="DC_j">
                                 <div class="DC_j01">
@@ -36,7 +36,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="DC_i" onclick="location.href='/New'">
+                        <div class="DC_i" onclick="location.href='/YeWu'">
                             <img src="../../../image/img/img_2.png">
                             <div class="DC_j">
                                 <div class="DC_j01">
