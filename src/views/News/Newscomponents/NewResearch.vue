@@ -33,7 +33,7 @@
         </div>
         <div class="NewsResearch-down">
             <p style="height: 80px;text-align: center;line-height: 80px">
-                <el-button style="height: 70px">新闻详情>></el-button>
+                <el-button style="height: 70px">更多新闻>></el-button>
             </p>
             <div v-for="items in newList">
                 <ul class="ResearchList">
@@ -197,6 +197,10 @@
         text-align: center;
 
     }
+    .ResearchList .router{
+        text-decoration: none;
+    }
+
 
 
 

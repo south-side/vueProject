@@ -6,7 +6,6 @@
                 <table style="margin: 0 auto;">
                     <tr>
                         <td v-for="items in areaList"   @click = "tab=items.name" :class="{tab_active:tab==items.name}"
-                            class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s"
                         >
                             <a v-on:click="true" class="el-icon-location" >{{items.name}}</a>
                         </td>

@@ -8,18 +8,18 @@
                     <table style="margin: 0 auto;">
                         <tr>
                             <td @click = "tab=0" :class="{'tab_active':tab==0}" active-class="active"
-                                class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s" v-on:click="true">
-                                <router-link to="/NewResearch">
+                                 v-on:click="true">
+                                <router-link to="/NewResearch" style="text-decoration: none;font-size: 23px;color: white">
                                     技术研究
                                 </router-link>
                             </td>
-                            <td @click = "tab=1" :class="{tab_active:tab==1}" class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s">
-                                <router-link to="/NewCooperation">
+                            <td @click = "tab=1" :class="{tab_active:tab==1}" >
+                                <router-link to="/NewCooperation" style="text-decoration: none;font-size: 23px;color: white">
                                     合作开发
                                 </router-link>
                             </td>
-                            <td  @click = "tab=2" :class="{tab_active:tab==2}" class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s">
-                                <router-link to="/NewFinance">
+                            <td  @click = "tab=2" :class="{tab_active:tab==2}">
+                                <router-link to="/NewFinance" style="text-decoration: none;font-size: 23px;color: white">
                                     融资
                                 </router-link>
                             </td>
@@ -50,7 +50,7 @@
         },
         data(){
             return{
-                tab:'0',
+                tab:0,
                 isActive:true,
             }
         },
@@ -108,6 +108,7 @@
         height: 2200px;
         margin: 0 auto;
     }
+    .News
     .fade-enter-active {
         transition: all 2s ease;
     }

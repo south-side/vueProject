@@ -6,34 +6,46 @@
                 <i></i>
             </span>
         </h1>
-        <div class="Develop_content">
+        <div class="Develop_content wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
             <div class="Develop_content_i">
                 <ul>
                     <li>
-                        <div class="DC_j">
-                            <img src="../../../image/bizhi.jpg">
+                        <div class="DC_i" onclick="location.href='/New'">
+                            <img src="../../../image/img/img_1.png">
+                            <div class="DC_j">
+                                <div class="DC_j01">
+                                    <h3>主营业务1</h3>
+                                    <p>
+                                        计算化学及人工智能驱动的创新药研发方案解决商
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </li>
                     <li style="margin-left: 5%;margin-right: 5%">
-                        <div class="DC_i">
-                            <a href="/">
-                                <h3>主营业务2</h3>
-                                <p>
-                                    计算化学及人工智能驱动的创新药研发方案解决商计算化学及人工智能驱动的创新药研发方案解决商
-                                </p>
-                                <span>详情>></span>
-                            </a>
+                        <div class="DC_i" onclick="location.href='/New'">
+                            <img src="../../../image/img/img_6.png">
+                            <div class="DC_j">
+                                <div class="DC_j01">
+                                    <h3>主营业务2</h3>
+                                    <p>
+                                        计算化学及人工智能驱动的创新药研发方案解决商
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </li>
                     <li>
-                        <div class="DC_i">
-                            <a href="/">
-                                <h3>主营业务3</h3>
-                                <p>
-                                    计算化学及人工智能驱动的创新药研发方案解决商计算化学及人工智能驱动的创新药研发方案解决商
-                                </p>
-                                <span>详情>></span>
-                            </a>
+                        <div class="DC_i" onclick="location.href='/New'">
+                            <img src="../../../image/img/img_2.png">
+                            <div class="DC_j">
+                                <div class="DC_j01">
+                                    <h3>主营业务3</h3>
+                                    <p>
+                                        计算化学及人工智能驱动的创新药研发方案解决商
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -51,7 +63,7 @@
 <style>
     .Develop{
         width:100%;
-        height:560px;
+        height:490px;
         float: left;
         position: relative;
         overflow:hidden;
@@ -102,61 +114,49 @@
     .Develop .Develop_content_i li{
         float: left;
         width: 30%;
-        height: 385px;
+        height: 300px;
         border-radius: 8px;
-        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 12px 0 rgba(10, 48, 110, 0.7);
+        position: relative;
     }
-    .Develop .Develop_content_i li .DC_i{
-        width:100%;
-        height:100%;
-        float: left;
-        margin:0;
-        padding:0;
-        overflow:hidden;
-        background-color: rgb(66, 110, 185,0.7);
+    .DC_i{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
     }
-    .DC_j{
-        width:385px;
-        height:300px;
+    .DC_i:hover{
+        transition-duration: 1s;
+
+        transform: scale(1.07);
+        cursor: pointer;
+    }
+    .DC_i img{
+        width: 100%;
+        height: 100%;
         position: absolute;
-        margin-left:10%;
-        -webkit-transform:skew(-45deg,0deg); /* Safari and Chrome */
-        transform:skew(-45deg,0deg);
-        -ms-transform:skew(-50deg,0deg); /* IE 9 */
-        -moz-transform:skew(-50deg,0deg); /* Firefox */
-
-        -o-transform:skew(-50deg,0deg); /* Opera */
-        overflow:hidden;
     }
-    .DC_j img{
-        width:384.75px;
-        height:300px;
-        margin-left:-31%;
-        -webkit-transform:skew(45deg,0deg); /* Safari and Chrome */
-        transform:skew(50deg,0deg);
-        -ms-transform:skew(50deg,0deg); /* IE 9 */
-        -moz-transform:skew(50deg,0deg); /* Firefox */
-
-        -o-transform:skew(50deg,0deg); /* Opera */
+    .DC_j {
+        background-color: rgb(10, 48, 110,0.7);
+        position: absolute;
+        width: 100%;
+        height: 40%;
+        top:60%
     }
-
-
-    .DC_j a{
-        text-decoration: none;
+    .DC_j01{
+        padding-left: 30px;
+        padding-right: 30px;
     }
-    .DC_j a h3{
-        font-size: 19px;
-        color: #333;
-        margin-bottom: 25px
+    .DC_j01 h3{
+        font-size: 22px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: white;
     }
-    .DC_j a p{
-        color: #666;
-        font-size: 15px;
+    .DC_j01 p{
+        font-size: 14px;
         line-height: 24px;
-        margin-bottom: 25px;
-    }
-    .DC_j a span{
-        color: #666;
+        color: white;
     }
 
 

@@ -25,20 +25,17 @@
                         <li class="News-li" :class="{active:istrue ==4}" @click="istrue=4" style="border-top-right-radius: 0.4rem">
                             AI驱动的分子对接
                         </li>
-
-                        <!--
-
-                        <li class="News-li" :class="{active:istrue ==4}" @click="istrue=4" style="border-top-right-radius: 0.4rem">
+                        <li class="News-li" :class="{active:istrue ==5}" @click="istrue=5" style="border-top-right-radius: 0.4rem">
                             蛋白质相互作用预测
                         </li>
-                        <li class="News-li" :class="{active:istrue ==4}" @click="istrue=4" style="border-top-right-radius: 0.4rem">
+                        <li class="News-li" :class="{active:istrue ==6}" @click="istrue=6" style="border-top-right-radius: 0.4rem">
                             多任务ADMET预测
                         </li>
-                        -->
                     </ul>
+                    <!--
                     <a href="/" class="News_left_btn"><i></i></a>
                     <a href="/" class="News_right_btn"><i></i></a>
-
+                    -->
                 </div>
                 <div  v-for="item in yanfaList">
                     <div v-show="istrue==item.id" class="News-content-bottom">
@@ -85,7 +82,7 @@
                     {id:5,url:require('../../../image/img_11.png'),name:'蛋白质相互作用预测',
                         content:'蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测'},
                     {id:6,url:require('../../../image/img-1.jpg'),name:'多任务ADMET预测',
-                        content:'多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测'},
+                        content:'多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测'},
 
                 ],
             };
@@ -108,10 +105,11 @@
 <style>
     .News{
         width: 100%;
-        height: 870px;
+        height: 800px;
         position: relative;
         float: left;
         top:110px;
+        background-color: #fafafa;
     }
     .News-title{
         width: 100%;
@@ -167,20 +165,20 @@
     }
     .News_left_btn{
         display: block;
-        height: 100px;
+        height: 620px;
         width: 50px;
         position: absolute;
-        top: 320px;
+        top: 0;
         background-color: rgba(0, 0, 0, 0.2);
         z-index: 2;
         left: -50px;
     }
     .News_right_btn{
         display: block;
-        height: 100px;
+        height: 530px;
         width: 50px;
         position: absolute;
-        top: 320px;
+        top: 0;
         background-color: rgba(0, 0, 0, 0.2);
         z-index: 2;
         right: -50px;
@@ -189,19 +187,14 @@
     .News-content-bottom{
         background-color: #145096;
         width: 100%;
-        height: 600px;
+        height: 500px;
         float: left;
         position: relative;
         top:46px
     }
-    .News-bottom{
-        width: 100%;
-        height: 100%;
-
-    }
     .News-content-bottom img{
         width: 100%;
-        height: 600px;
+        height: 500px;
         border-bottom-right-radius: 0.4rem;
         border-bottom-left-radius: 0.4rem;
     }

@@ -19,18 +19,6 @@
                         <router-link to="/" class="router">
                             自主专利技术
                         </router-link>
-                        <ul class="header-li-ul">
-                            <li>
-                                <router-link to="" class="ul-router">
-                                    研究方向
-                                </router-link>
-                            </li>
-                            <li>
-                                <router-link to="" class="ul-router">
-                                    研发管线
-                                </router-link>
-                            </li>
-                        </ul>
                     </li>
                     <li class="header-li">
                         <router-link to="/AboutUS" class="router">
@@ -55,12 +43,12 @@
                         </ul>
                     </li>
                     <li class="header-li">
-                        <router-link to="/New" class="router">
+                        <router-link to="/NewResearch" class="router">
                             公司新闻
                         </router-link>
                         <ul class="header-li-ul">
                             <li>
-                                <router-link to="" class="ul-router">
+                                <router-link to="/NewResearch" class="ul-router">
                                     技术研究
                                 </router-link>
                             </li>

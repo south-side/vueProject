@@ -4,13 +4,19 @@
         <HomeBanner></HomeBanner>
         <HomeDevelop></HomeDevelop>
         <HomeResearch></HomeResearch>
-        <HomeProduct></HomeProduct>
-        <HomeIntroduce></HomeIntroduce>
+        <HomeNews></HomeNews>
         <HomeFooter></HomeFooter>
+
 
         <!--
 
-<HomeDevelop></HomeDevelop>
+
+
+
+
+
+
+         <HomeProduct></HomeProduct>
 
 
         -->
@@ -21,8 +27,6 @@
     import HomeHeader from '../Header'
     import HomeBanner from './Homecomponents/Banner'
     import HomeNews from './Homecomponents/News'
-    import HomeProduct from './Homecomponents/Product'
-    import HomeIntroduce from './Homecomponents/Introduce'
     import HomeFooter from '../Footer'
     import HomeDevelop from './Homecomponents/Develop'
     import HomeResearch from './Homecomponents/Research'
@@ -32,8 +36,6 @@
             HomeHeader,
             HomeBanner,
             HomeNews,
-            HomeProduct,
-            HomeIntroduce,
             HomeFooter,
             HomeDevelop,
             HomeResearch

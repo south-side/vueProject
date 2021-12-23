@@ -1,55 +1,303 @@
 <template>
-    <div class="Introduces">
-        <h1 class="Intro-title wow fadeInUp " data-wow-duration="1s" data-wow-delay="0.4s">
-            <a href="/">公司简介</a>
+    <div style="width:100%;height: 700px;">
+        <h1 class="Pro-title wow fadeInUp " data-wow-duration="1s" data-wow-delay="0.4s">
+            <a href="/">核心技术</a>
             <span>
                 <i></i>
             </span>
         </h1>
-        <div class="Intro_content">
-            <div class="Introduce-bg">
-                <img src="../../../image/bizhi.jpg">
-            </div>
-
-
-            <!--
-            <div class="Intro_content_i wow rollIn" data-wow-duration="1s" data-wow-delay="1.5s">
-                <div class="Intro_content_left">
-                    <img src="../../../image/img_11.png">
+        <el-row id="myMenu">
+            <el-row class="nav">
+                <el-row class="setPosition borderBox" v-for="(item,index) in list" :key="index" :style="styleList[indexList[index]]">
+                    <p class="titleText" :style="styleList[indexList[index]].textStyle"
+                       @click="moveToCenter(indexList[index])"
+                       :class="{active:istrue ==index}"
+                       v-on:click="istrue=index">{{item.title}}</p>
+                    <!-- <br>我取的是indexList[{{index}}]={{indexList[index]}} -->
+                    <!-- <br>我是页面中展示的第{{indexList[index]}}位 -->
+                </el-row>
+            </el-row>
+        </el-row>
+        <div style="width: 100%;height: 500px;float:left;position: relative;top:46px;">
+            <div v-for="(item,index) in yanfaList">
+                <div style="width: 90%;margin-left: 5%;margin-right: 5%;float: left;position: relative;background-color: #568ae1;height: 500px;" v-show="istrue==index">
+                    <img :src="item.url" style="width: 100%;height: 100%">
+                    <div style="background: rgba(0,0,0,.3);width: 100%;height: 100%;position:absolute;
+                        left: 0;top:0;border-bottom-right-radius: 0.4rem;
+                        border-bottom-left-radius: 0.4rem">
+                    </div>
+                    <div class="News-content-bottom-i" >
+                        <h2>{{item.name }}</h2>
+                        <p style="line-height: 34px">
+                            {{item.content}}
+                        </p>
+                        <a href="/">
+                            详情  >>
+                        </a>
+                    </div>
                 </div>
-                <div class="Intro_content_right">
-                    <h2 style="font-size: 24px;margin-left: 30px;margin-top: 50px;color: #333">关于我们</h2>
-                    <p>
-                        公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介
-                        公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介
-                        公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介
-
-                    </p>
-                </div>
             </div>
-            -->
-
         </div>
     </div>
 </template>
-
 <script>
     export default {
-        name: ""
-    }
-</script>
+        data() {
+            return {
+                istrue:0,
+                yanfaList:[
+                    {id:0,url:require('../../../image/img-4.jpg'),name:'RBE-MD驱动的增强采样助力构效关系理解',
+                        content:'RBE-MD驱动的增强采样助力构效关系理解,RBE-MD驱动的增强采样助力构效关系理解,RBE-MD驱动的增强采样助力构效关系理解RBE-MD驱动的增强采样助力构效关系理解RBE-MD驱动的增强采样助力构效关系理解RBE-MD驱动的增强采样助力构效关系理解RBE-MD驱动的增强采样助力构效关系理解'},
+                    {id:1,url:require('../../../image/img_11.png'),name:'RBE-MD驱动的结合自由能计算',
+                        content:'RBE-MD驱动的结合自由能计算RBE-MD驱动的结合自由能计算RBE-MD驱动的结合自由能计算RBE-MD驱动的结合自由能计算RBE-MD驱动的结合自由能计算RBE-MD驱动的结合自由能计算RBE-MD驱动的结合自由能计算RBE-MD驱动的结合自由能计算RBE-MD驱动的结合自由能计算RBE-MD驱动的结合自由能计算'},
+                    {id:2,url:require('../../../image/img-1.jpg'),name:'De novo分子生成',
+                        content:'De novo分子生成De novo分子生成De novo分子生成De novo分子生成De novo分子生成De novo分子生成De novo分子生成De novo分子生成De novo分子生成De novo分子生成De novo分子生成De novo分子生成De novo分子生成De novo分子生成'},
+                    {id:3,url:require('../../../image/img_11.png'),name:'蛋白质结构预测',
+                        content:'蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测'},
+                    {id:4,url:require('../../../image/img-1.jpg'),name:'AI驱动的分子对接',
+                        content:'AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接'},
+                    {id:5,url:require('../../../image/img_11.png'),name:'蛋白质相互作用预测',
+                        content:'蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测'},
+                    {id:6,url:require('../../../image/img-1.jpg'),name:'多任务ADMET预测',
+                        content:'多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测'},
 
-<style>
-    .Introduces{
-        width:100%;
-        height:700px;
-        float: left;
-        position: relative;
-        overflow:hidden;
-        top:110px;
-        background-color: #fafafa;
-    }
-    .Intro-title{
+                ],
+                list: [
+                    { title: "增强采样助力构效关系" }, { title: "结合自由能计算" },
+                    { title: "De novo分子" }, { title: "蛋白质结构预测" },
+                    { title: "AI驱动的分子对接" },{title: "蛋白质相互作用预测"},{title: "多任务ADMET预测"}
+
+                ],
+                indexList: [], //下标列表
+                centerNum: 0, //中间位置的下标
+                theFirstIndex: 0, //存储页面展示的数组中第一位下标
+                theLastIndex: 0, //存储页面展示的数组中最后一位下标
+                styleList: [
+                    {
+                        width: "220px",
+                        height: "74px",
+                        left: "-240px",
+                        transition: "none",
+                        textStyle: {
+                            fontSize: "18px",
+                            lineHeight: "28px",
+                            transition: "none",
+                        }
+                    },
+                    {
+                        width: "220px",
+                        height: "74px",
+                        left: "0",
+                        transition: "left 0.4s linear, top 0.4s linear, width 0.4s linear,height 0.4s linear",
+                        textStyle: {
+                            fontSize: "18px",
+                            lineHeight: "70px",
+                            transition: "font-size 0.4s linear, line-height 0.4s linear",
+
+                        }
+                    },
+                    {
+                        width: "220px",
+                        height: "74px",
+                        left: "260px",
+                        transition: "left 0.4s linear, top 0.4s linear, width 0.4s linear,height 0.4s linear",
+                        textStyle: {
+                            fontSize: "18px",
+                            lineHeight: "70px",
+                            transition: "font-size 0.4s linear, line-height 0.4s linear",
+
+                        }
+                    },
+                    {
+                        width: "220px",
+                        height: "74px",
+                        left: "520px",
+                        transition: "left 0.4s linear, top 0.4s linear, width 0.4s linear,height 0.4s linear",
+                        textStyle: {
+                            fontSize: "18px",
+                            lineHeight: "70px",
+                            transition: "font-size 0.4s linear, line-height 0.4s linear",
+                            borderBottom:"4px solid red"
+                        }
+                    },
+                    {
+                        width: "220px",
+                        height: "70px",
+                        left: "780px",
+                        transition: "left 0.4s linear, top 0.4s linear, width 0.4s linear,height 0.4s linear",
+                        textStyle: {
+                            fontSize: "18px",
+                            lineHeight: "70px",
+                            transition: "font-size 0.4s linear, line-height 0.4s linear",
+                            borderBottom:"4px solid red"
+                        }
+                    },
+                    {
+                        width: "220px",
+                        height: "70px",
+                        left: "1040px",
+                        transition: "left 0.4s linear, top 0.4s linear, width 0.4s linear,height 0.4s linear",
+                        textStyle: {
+                            fontSize: "18px",
+                            lineHeight: "70px",
+                            transition: "font-size 0.4s linear, line-height 0.4s linear"
+                        }
+                    },
+                    {
+                        width: "220px",
+                        height: "70px",
+                        left: "1300px",
+                        transition: "left 0.4s linear, top 0.4s linear, width 0.4s linear,height 0.4s linear",
+                        textStyle: {
+                            fontSize: "18px",
+                            lineHeight: "70px",
+                            transition: "none"
+                        }
+                    },
+                    {
+                        width: "220px",
+                        height: "70px",
+                        left: "1560px",
+                        transition: "left 0.4s linear, top 0.4s linear, width 0.4s linear,height 0.4s linear",
+                        textStyle: {
+                            fontSize: "18px",
+                            lineHeight: "70px",
+                            transition: "none"
+                        }
+                    },
+                    {
+                        width: "220px",
+                        height: "70px",
+                        left: "1820px",
+                        transition: "none",
+                        textStyle: {
+                            fontSize: "18px",
+                            lineHeight: "70px",
+                            transition: "none"
+                        }
+                    },
+                ]
+            };
+        },
+        created() {
+            this.initIndexList(9);
+            this.initList(0);
+            this.centerNum = 3;
+        },
+        methods: {
+            //初始化下标数组，num为数组长度
+            initIndexList(num) {
+                this.indexList = [];
+                for (var i = 0; i < num; i++) {
+                    this.indexList[i] = i;
+                }
+            },
+            //初始化菜单数组，在首尾添加新元素
+            initList(num) {
+                const that = this;
+                var start = [];
+                var mid = [];
+                var end = [];
+                var newArray = [];
+                if (num == 0) {
+                    //页面初次加载时执行
+                    mid = that.list;
+                    end = mid.slice(0, 1);
+                    start = mid.slice(mid.length - 1, mid.length);
+                    newArray = start.concat(mid);
+                    that.list = newArray.concat(end);
+                    //记录改变后的数组在页面展示的第一位（取styleList[1]样式）下标值（即indexList.indexOf(1)）
+                    that.theFirstIndex = that.indexList.indexOf(1);
+                    that.theLastIndex = that.indexList.indexOf(that.list.length - 2);
+                } else {
+                    //移动后执行
+                    mid = that.list.slice(1, that.list.length - 1);
+                    end = that.list.slice(that.theFirstIndex, that.theFirstIndex + 1);
+                    start = that.list.slice(that.theLastIndex, that.theLastIndex + 1);
+                    var startIndex = 0;
+                    var endIndex = 0;
+                    if (that.theFirstIndex <= 0) {
+                        startIndex = that.indexList.length - 1;
+                    } else {
+                        startIndex = that.theFirstIndex - 1;
+                    }
+                    if (that.theLastIndex >= that.indexList.length - 1) {
+                        endIndex = 0;
+                    } else {
+                        endIndex = that.theLastIndex + 1;
+                    }
+                    that.list[startIndex] = start[0];
+                    that.list[endIndex] = end[0];
+                }
+            },
+            moveToCenter(index) {
+                const that = this;
+                var count = this.centerNum;
+                if (index > count) {
+                    that.moveToLeft();
+                    var interval = setInterval(function() {
+                        if (index > count + 1) {
+                            that.moveToLeft();
+                            count++;
+                        } else {
+                            clearInterval(interval);
+                        }
+                    }, 4 * 100);
+                } else if (index < count) {
+                    that.moveToRight();
+                    var interval = setInterval(function() {
+                        if (index < count - 1) {
+                            that.moveToRight();
+                            count--;
+                        } else {
+                            clearInterval(interval);
+                        }
+                    }, 4 * 100);
+                }
+            },
+            //菜单整体向左移一位，下标数组向右移一位
+            moveToRight() {
+                this.styleList[0].transition = "none";
+                this.styleList[0].textStyle.transition = "none";
+                this.styleList[this.styleList.length - 1].transition = "left 0.4s linear, top 0.4s linear, width 0.4s linear,height 0.4s linear";
+                this.styleList[this.styleList.length - 1].textStyle.transition = "font-size 0.4s linear, line-height 0.4s linear";
+                this.indexList = this.indexList.splice(1, this.indexList.length).concat(this.indexList);
+                if (this.theFirstIndex <= 0) {
+                    this.theFirstIndex = this.indexList.length - 1;
+                } else {
+                    this.theFirstIndex--;
+                }
+                if (this.theLastIndex <= 0) {
+                    this.theLastIndex = this.indexList.length - 1;
+                } else {
+                    this.theLastIndex--;
+                }
+                this.initList(1);
+            },
+            //菜单 整体向右移一位，下标数组向左移一位
+            moveToLeft() {
+                this.styleList[this.styleList.length - 1].transition = "none";
+                this.styleList[this.styleList.length - 1].textStyle.transition = "none";
+                this.styleList[0].transition = "left 0.4s linear, top 0.4s linear, width 0.4s linear,height 0.4s linear";
+                this.styleList[0].textStyle.transition = "font-size 0.4s linear, line-height 0.4s linear";
+                this.indexList = this.indexList.splice(this.indexList.length - 1, this.indexList.length).concat(this.indexList);
+                if (this.theFirstIndex >= this.indexList.length - 1) {
+                    this.theFirstIndex = 0;
+                } else {
+                    this.theFirstIndex++;
+                }
+                if (this.theLastIndex >= this.indexList.length - 1) {
+                    this.theLastIndex = 0;
+                } else {
+                    this.theLastIndex++;
+                }
+                this.initList(1);
+            }
+        }
+    };
+</script>
+<style scoped>
+    .Pro-title{
         width: 100%;
         height:100px;
         text-align: center;
@@ -57,90 +305,80 @@
         margin-block-start: 0;
         margin-block-end: 0;
     }
-    .Introduces .Intro-title a{
+    .Pro-title a{
         color: #333333;
         text-decoration: none;
     }
-
-    .Introduces .Intro-title a:hover{
-        color: #568ae1;
-    }
-    .Introduces .Intro-title span i{
+    .Pro-title span i{
         width: 200px;
         height: 10px;
         background: rgba(0,102,255,0.3);
         display: block;
         margin:0 auto;
     }
-    .Introduces .Intro_content{
-        width:100%;
-        height:550px;
-        float: left;
-        margin:0;
-        padding:0;
-        overflow:hidden;
-        background-color: rgb(66, 110, 185,0.7);
+    #myMenu {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        width: 90%;
+        margin: 0 auto;
+        border-bottom: 4px solid rgba(29, 110, 193, .3);
     }
-    .Introduce-bg{
-        width:100%;
-        height:100%;
-        position: absolute;
-        margin-left:37%;
-        transform:skew(-50deg,0deg);
-        -ms-transform:skew(-50deg,0deg); /* IE 9 */
-        -moz-transform:skew(-50deg,0deg); /* Firefox */
-        -webkit-transform:skew(-50deg,0deg); /* Safari and Chrome */
-        -o-transform:skew(-50deg,0deg); /* Opera */
-        overflow:hidden;
-    }
-    .Introduce-bg img{
-        width:100%;
-        height:550px;
-        margin-left:-31%;
-        transform:skew(50deg,0deg);
-        -ms-transform:skew(50deg,0deg); /* IE 9 */
-        -moz-transform:skew(50deg,0deg); /* Firefox */
-        -webkit-transform:skew(50deg,0deg); /* Safari and Chrome */
-        -o-transform:skew(50deg,0deg); /* Opera */
-    }
-    .Intro_content_i{
-        width:90%;
-        height:450px;
-        background-color: rgb(255, 255, 255,0.6);
-        position: absolute;
-        margin-left: 5%;
-        margin-top: 50px;
-    }
-    .Intro_content_left{
-        width: 63%;
-        height: 450px;
-        float: left;
-    }
-    .Intro_content_left img{
+    .nav {
         width: 100%;
-        height: 450px;
-    }
-    .Intro_content_right{
-        width: 37%;
-        height: 450px;
-        float: left;
-        
-    }
-    .Intro_content_right p{
-        font-size: 14px;
-        margin-left: 30px;
-        margin-right: 30px;
-        margin-top: 30px;
-        color: #666666;
-        line-height: 32px;
-        display: -webkit-box;
+        height: 70px;
+        margin: 0 auto;
         overflow: hidden;
-        text-overflow: ellipsis;
-        word-break: break-all;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 7;
     }
-
-
-
+    .setPosition {
+        position: absolute;
+    }
+    .borderBox {
+        text-align: center;
+        height: 70px;
+    }
+    p{
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+    .titleText {
+        text-align: center;
+        cursor: pointer;
+    }
+    .active{
+        color: white;
+        background-color: #264994;
+        border-bottom: 4px solid red;
+    }
+    .titleText:hover{
+        color: white;
+        background-color: #264994;
+        border-bottom: 4px solid red;
+    }
+    .News-content-bottom-i{
+        width: 70%;
+        height: 450px;
+        position: absolute;
+        left: 180px;
+        top:60px;
+    }
+    .News-content-bottom-i h2{
+        position: relative;
+        top:40px;
+        color: snow;
+        font-size: 18px;
+    }
+    .News-content-bottom-i p{
+        position: relative;
+        top:80px;
+        color: snow;
+        font-size: 18px;
+    }
+    .News-content-bottom-i a{
+        position: relative;
+        top:120px;
+        color: white;
+        text-decoration: none;
+    }
 </style>
