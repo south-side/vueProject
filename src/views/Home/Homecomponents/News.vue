@@ -24,7 +24,7 @@
         </div>
         <div class="Pro-content-bottom  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
             <div v-for="(item,index) in yanfaList">
-                <div class="Pro-content-bottomAll" v-show="istrue==index">
+                <div class="Pro-content-bottomAll" v-show="istrue==item.id">
                     <img :src="item.url" >
                     <div style="background: rgba(0,0,0,.7);width: 100%;height: 100%;position:absolute;
                         left: 0;top:0;border-bottom-right-radius: 0.4rem;
@@ -65,8 +65,7 @@
                     {id:4,name:'蛋白质结构预测',},
                     {id:5,name:'AI驱动的分子',},
                     {id:6,name:'蛋白质相互作用预测',},
-                    {id:0,name:'2AI驱动的分子',},
-
+                    {id:0,name:'多任务ADMET预测',},
 
                 ],
 

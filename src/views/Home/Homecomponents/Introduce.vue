@@ -1,27 +1,34 @@
 <template>
-    <div style="width:100%;height: 700px;">
+    <div style="width:100%;height: 810px;top:110px;position: relative;float: left;background-color: #fafafa;">
         <h1 class="Pro-title wow fadeInUp " data-wow-duration="1s" data-wow-delay="0.4s">
             <a href="/">核心技术</a>
             <span>
                 <i></i>
             </span>
         </h1>
-        <el-row id="myMenu">
-            <el-row class="nav">
-                <el-row class="setPosition borderBox" v-for="(item,index) in list" :key="index" :style="styleList[indexList[index]]">
-                    <p class="titleText" :style="styleList[indexList[index]].textStyle"
-                       @click="moveToCenter(indexList[index])"
-                       :class="{active:istrue ==index}"
-                       v-on:click="istrue=index">{{item.title}}</p>
-                    <!-- <br>我取的是indexList[{{index}}]={{indexList[index]}} -->
-                    <!-- <br>我是页面中展示的第{{indexList[index]}}位 -->
+        <div style="width:100%;height: 70px;position: relative;
+        float: left;" class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+            <el-row id="myMenu" >
+                <el-row class="nav" style="border-top-left-radius: 0.4rem;border-top-right-radius: 0.4rem">
+                    <el-row class="setPosition borderBox" v-for="(item,index) in list" :key="index" :style="styleList[indexList[index]]">
+                        <p class="titleText" :style="styleList[indexList[index]].textStyle"
+                           @click="moveToCenter(indexList[index])"
+                           :class="{active:istrue ==item.id}"
+                           v-on:click="istrue=item.id"
+                        >
+                            {{item.title}}</p>
+                        <!-- <br>我取的是indexList[{{index}}]={{indexList[index]}} -->
+                        <!-- <br>我是页面中展示的第{{indexList[index]}}位 -->
+                    </el-row>
                 </el-row>
             </el-row>
-        </el-row>
-        <div style="width: 100%;height: 500px;float:left;position: relative;top:46px;">
+        </div>
+        <div style="width: 100%;height: 500px;float:left;position: relative;top:46px;"
+             class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
             <div v-for="(item,index) in yanfaList">
-                <div style="width: 90%;margin-left: 5%;margin-right: 5%;float: left;position: relative;background-color: #568ae1;height: 500px;" v-show="istrue==index">
-                    <img :src="item.url" style="width: 100%;height: 100%">
+                <div style="width: 90%;margin-left: 5%;margin-right: 5%;float: left;position: relative;background-color: #568ae1;height: 500px;" v-show="istrue==item.id">
+                    <img :src="item.url" style="width: 100%;height: 100%;border-bottom-right-radius: 0.4rem;
+                        border-bottom-left-radius: 0.4rem">
                     <div style="background: rgba(0,0,0,.3);width: 100%;height: 100%;position:absolute;
                         left: 0;top:0;border-bottom-right-radius: 0.4rem;
                         border-bottom-left-radius: 0.4rem">
@@ -44,28 +51,28 @@
     export default {
         data() {
             return {
-                istrue:0,
+                istrue:1,
                 yanfaList:[
-                    {id:0,url:require('../../../image/img-4.jpg'),name:'RBE-MD驱动的增强采样助力构效关系理解',
+                    {id:1,url:require('../../../image/img/img_4.png'),name:'RBE-MD驱动的增强采样助力构效关系理解',
                         content:'RBE-MD驱动的增强采样助力构效关系理解,RBE-MD驱动的增强采样助力构效关系理解,RBE-MD驱动的增强采样助力构效关系理解RBE-MD驱动的增强采样助力构效关系理解RBE-MD驱动的增强采样助力构效关系理解RBE-MD驱动的增强采样助力构效关系理解RBE-MD驱动的增强采样助力构效关系理解'},
-                    {id:1,url:require('../../../image/img_11.png'),name:'RBE-MD驱动的结合自由能计算',
+                    {id:2,url:require('../../../image/img_11.png'),name:'RBE-MD驱动的结合自由能计算',
                         content:'RBE-MD驱动的结合自由能计算RBE-MD驱动的结合自由能计算RBE-MD驱动的结合自由能计算RBE-MD驱动的结合自由能计算RBE-MD驱动的结合自由能计算RBE-MD驱动的结合自由能计算RBE-MD驱动的结合自由能计算RBE-MD驱动的结合自由能计算RBE-MD驱动的结合自由能计算RBE-MD驱动的结合自由能计算'},
-                    {id:2,url:require('../../../image/img-1.jpg'),name:'De novo分子生成',
+                    {id:3,url:require('../../../image/img/img_9.png'),name:'De novo分子生成',
                         content:'De novo分子生成De novo分子生成De novo分子生成De novo分子生成De novo分子生成De novo分子生成De novo分子生成De novo分子生成De novo分子生成De novo分子生成De novo分子生成De novo分子生成De novo分子生成De novo分子生成'},
-                    {id:3,url:require('../../../image/img_11.png'),name:'蛋白质结构预测',
+                    {id:4,url:require('../../../image/img/img_10.png'),name:'蛋白质结构预测',
                         content:'蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测蛋白质结构预测'},
-                    {id:4,url:require('../../../image/img-1.jpg'),name:'AI驱动的分子对接',
+                    {id:5,url:require('../../../image/img/img_8.png'),name:'AI驱动的分子对接',
                         content:'AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接AI驱动的分子对接'},
-                    {id:5,url:require('../../../image/img_11.png'),name:'蛋白质相互作用预测',
+                    {id:6,url:require('../../../image/img/img_11.png'),name:'蛋白质相互作用预测',
                         content:'蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测蛋白质相互作用预测'},
-                    {id:6,url:require('../../../image/img-1.jpg'),name:'多任务ADMET预测',
+                    {id:0,url:require('../../../image/img/img_10.png'),name:'多任务ADMET预测',
                         content:'多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测多任务ADMET预测'},
 
                 ],
                 list: [
-                    { title: "增强采样助力构效关系" }, { title: "结合自由能计算" },
-                    { title: "De novo分子" }, { title: "蛋白质结构预测" },
-                    { title: "AI驱动的分子对接" },{title: "蛋白质相互作用预测"},{title: "多任务ADMET预测"}
+                    { id:1,title: "增强采样助力构效关系" }, { id:2,title: "结合自由能计算" },
+                    { id:3,title: "De novo分子" }, { id:4,title: "蛋白质结构预测" },
+                    { id:5,title: "AI驱动的分子对接" },{id:6,title: "蛋白质相互作用预测"},{id:0,title: "多任务ADMET预测"}
 
                 ],
                 indexList: [], //下标列表
@@ -74,8 +81,8 @@
                 theLastIndex: 0, //存储页面展示的数组中最后一位下标
                 styleList: [
                     {
-                        width: "220px",
-                        height: "74px",
+                        width: "225px",
+                        height: "70px",
                         left: "-240px",
                         transition: "none",
                         textStyle: {
@@ -85,8 +92,8 @@
                         }
                     },
                     {
-                        width: "220px",
-                        height: "74px",
+                        width: "225px",
+                        height: "70px",
                         left: "0",
                         transition: "left 0.4s linear, top 0.4s linear, width 0.4s linear,height 0.4s linear",
                         textStyle: {
@@ -97,9 +104,9 @@
                         }
                     },
                     {
-                        width: "220px",
-                        height: "74px",
-                        left: "260px",
+                        width: "225px",
+                        height: "70px",
+                        left: "268px",
                         transition: "left 0.4s linear, top 0.4s linear, width 0.4s linear,height 0.4s linear",
                         textStyle: {
                             fontSize: "18px",
@@ -109,33 +116,31 @@
                         }
                     },
                     {
-                        width: "220px",
-                        height: "74px",
-                        left: "520px",
+                        width: "225px",
+                        height: "70px",
+                        left: "536px",
                         transition: "left 0.4s linear, top 0.4s linear, width 0.4s linear,height 0.4s linear",
                         textStyle: {
                             fontSize: "18px",
                             lineHeight: "70px",
                             transition: "font-size 0.4s linear, line-height 0.4s linear",
-                            borderBottom:"4px solid red"
                         }
                     },
                     {
-                        width: "220px",
+                        width: "225px",
                         height: "70px",
-                        left: "780px",
+                        left: "804px",
                         transition: "left 0.4s linear, top 0.4s linear, width 0.4s linear,height 0.4s linear",
                         textStyle: {
                             fontSize: "18px",
                             lineHeight: "70px",
                             transition: "font-size 0.4s linear, line-height 0.4s linear",
-                            borderBottom:"4px solid red"
                         }
                     },
                     {
-                        width: "220px",
+                        width: "225px",
                         height: "70px",
-                        left: "1040px",
+                        left: "1072px",
                         transition: "left 0.4s linear, top 0.4s linear, width 0.4s linear,height 0.4s linear",
                         textStyle: {
                             fontSize: "18px",
@@ -144,9 +149,9 @@
                         }
                     },
                     {
-                        width: "220px",
+                        width: "225px",
                         height: "70px",
-                        left: "1300px",
+                        left: "1350px",
                         transition: "left 0.4s linear, top 0.4s linear, width 0.4s linear,height 0.4s linear",
                         textStyle: {
                             fontSize: "18px",
@@ -155,7 +160,7 @@
                         }
                     },
                     {
-                        width: "220px",
+                        width: "225px",
                         height: "70px",
                         left: "1560px",
                         transition: "left 0.4s linear, top 0.4s linear, width 0.4s linear,height 0.4s linear",
@@ -166,7 +171,7 @@
                         }
                     },
                     {
-                        width: "220px",
+                        width: "225px",
                         height: "70px",
                         left: "1820px",
                         transition: "none",
@@ -304,6 +309,7 @@
         padding-top: 30px;
         margin-block-start: 0;
         margin-block-end: 0;
+
     }
     .Pro-title a{
         color: #333333;
@@ -323,6 +329,7 @@
         user-select: none;
         width: 90%;
         margin: 0 auto;
+        height: 70px;
         border-bottom: 4px solid rgba(29, 110, 193, .3);
     }
     .nav {
@@ -345,16 +352,18 @@
     .titleText {
         text-align: center;
         cursor: pointer;
+        margin-block-start: 0;
+        margin-block-end: 0;
     }
     .active{
         color: white;
         background-color: #264994;
-        border-bottom: 4px solid red;
+        border-bottom: 4px solid #264994;
     }
     .titleText:hover{
         color: white;
         background-color: #264994;
-        border-bottom: 4px solid red;
+        border-bottom: 4px solid #264994;
     }
     .News-content-bottom-i{
         width: 70%;

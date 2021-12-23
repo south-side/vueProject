@@ -4,9 +4,8 @@
         <HomeBanner></HomeBanner>
         <HomeDevelop></HomeDevelop>
         <HomeResearch></HomeResearch>
-        <HomeNews></HomeNews>
+        <HomeIntroduce></HomeIntroduce>
         <HomeFooter></HomeFooter>
-
 
         <!--
 
@@ -26,19 +25,19 @@
 <script>
     import HomeHeader from '../Header'
     import HomeBanner from './Homecomponents/Banner'
-    import HomeNews from './Homecomponents/News'
     import HomeFooter from '../Footer'
     import HomeDevelop from './Homecomponents/Develop'
     import HomeResearch from './Homecomponents/Research'
+    import HomeIntroduce from './Homecomponents/Introduce'
     export default {
         name: "Home",
         components:{
             HomeHeader,
             HomeBanner,
-            HomeNews,
             HomeFooter,
             HomeDevelop,
-            HomeResearch
+            HomeResearch,
+            HomeIntroduce
         },
         data(){
             return{
